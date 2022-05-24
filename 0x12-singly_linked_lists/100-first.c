@@ -1,8 +1,7 @@
 #include <stdio.h>
 void __attribute__((constructor)) hare(void);
-
 /**
- *
+ * Hare
  * hare - Prints a string before the
  * main function is executed.
  */
