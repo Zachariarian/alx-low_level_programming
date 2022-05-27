@@ -1,8 +1,8 @@
 #include "lists.h"
 /**
- * free_listint_safe - thsi function free a list in safe mode
- * @h: the head of list
- * Return: the size of the list
+ * free_listint_safe - frees a linked list
+ * @h: pointer to the first node in the linked list
+ * Return: number of elements in the freed list
  */
 size_t free_listint_safe(listint_t **h)
 {
@@ -19,7 +19,8 @@ tmp = actual->next;
 free(actual);
 actual = tmp;
 i++;
-} else
+}
+else
 {
 free(actual);
 *h = NULL;

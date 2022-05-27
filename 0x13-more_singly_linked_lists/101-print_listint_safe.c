@@ -3,7 +3,7 @@
 /**
  * looped_listint_len - Counts the number of unique nodes
  * @h: the head of list
- * Return: If list not looped - 0. Otherwise -number of unique nodes
+ * Return: size of list
  */
 size_t looped_listint_len(const listint_t *head)
 {
