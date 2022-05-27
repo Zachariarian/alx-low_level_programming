@@ -1,4 +1,5 @@
 #include "lists.h"
+#include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
 /**
@@ -19,8 +20,7 @@ return (tortoise);
 return (NULL);
 }
 /**
- * find_listint_loop - finds an occurrence of  loop in a list and returns 
- * head node
+ * find_listint_loop - finds an occurrence of  loop in a list and returns head node
  * @head:pointer to listint node
  * Return:pointer to head if true,NULL otherwise
  */
