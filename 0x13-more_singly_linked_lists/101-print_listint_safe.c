@@ -1,8 +1,7 @@
 #include <stdlib.h>
-#include <stdio.h>
 #include <string.h>
+#include <stdio.h>
 #include "lists.h"
-
 /**
  * unique_node_count - counts no. of unique nodes
  * @head:pointer to a head node
@@ -52,4 +51,4 @@ i++;
 head = head->next;
 }
 return (i);
-i}
+}
