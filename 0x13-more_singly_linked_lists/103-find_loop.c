@@ -6,7 +6,7 @@
  * find_common_node - finds a common node in a looped linked list
  * @hare:faster incrementing pointer
  * @tortoise:slower pointer
- * Return:address to common node,NULL otherwise
+ * Return:address to common node, NULL otherwise
  */
 listint_t *find_common_node(listint_t *hare, listint_t *tortoise)
 {
@@ -20,7 +20,8 @@ return (tortoise);
 return (NULL);
 }
 /**
- * find_listint_loop - finds an occurrence of  loop in a list and returns head node
+ * find_listint_loop - finds an occurrence of  loop in a list 
+ * and returns head node
  * @head:pointer to listint node
  * Return:pointer to head if true,NULL otherwise
  */
