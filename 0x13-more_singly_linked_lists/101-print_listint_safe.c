@@ -2,8 +2,8 @@
 #include <stdio.h>
 /**
  * looped_listint_len - Counts the number of unique nodes
- * @h: the head of list
- * Return: size of list
+ * @h: the head of linked list
+ * Return: size of linked list
  */
 size_t looped_listint_len(const listint_t *head)
 {
@@ -37,11 +37,13 @@ hare = (hare->next)->next;
 }
 return (0);
 }
+
 /**
  * print_listint_safe - Prints a listint_t list safely.
- * @head: A pointer to the head of the listint_t list.
+ * @head: list of type listint_t to print
  * Return: The number of nodes in the list.
  */
+
 size_t print_listint_safe(const listint_t *head)
 {
 size_t nodes, index = 0;
