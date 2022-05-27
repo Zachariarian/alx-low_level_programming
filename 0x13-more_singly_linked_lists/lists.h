@@ -1,5 +1,5 @@
-#ifndef LIST_H
-#define LIST_H
+#ifndef LISTS_H
+#define LISTS_H
 #include <strings.h>
 #include <stdlib.h>
 #include <stdio.h>
@@ -8,7 +8,6 @@
  * @n: integer
  * @next: points to the next node
  * Description: singly linked list node structure
- * for Holberton project
  */
 typedef struct listint_s
 {

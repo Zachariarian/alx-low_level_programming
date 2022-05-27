@@ -52,4 +52,4 @@ i++;
 head = head->next;
 }
 return (i);
-}
+i}
