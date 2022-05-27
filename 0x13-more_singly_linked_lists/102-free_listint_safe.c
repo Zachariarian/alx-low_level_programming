@@ -1,34 +1,29 @@
 #include "lists.h"
-#include <stdlib.h>
-#include <string.h>
-#include <stdio.h>
 /**
- * free_listint_safe - frees a listint safely
- * @h:pointer to listint
- * Return:size of list free'd
+ * free_listint_safe - thsi function free a list in safe mode
+ * @h: the head of list
+ * Description: this function free a string in a safe mode
+ * section header: the header of this function is lists.h)*
+ * Return: the size of the list
  */
 size_t free_listint_safe(listint_t **h)
 {
-int p_diff;
-size_t i = 0;
-listint_t *temp;
-if (h == NULL || *h == NULL)
+listint_t *tmp, *actual;
+size_t i;
+int rest;
+i = 0, actual = *h;
+while (actual)
 {
-return (0);
-}
-while (*h)
+rest = actual - actual->next;
+if (rest > 0)
 {
-p_diff = *h - (*h)->next;
-if (p_diff > 0)
-{
-temp = (*h)->next;
-free(*h);
-*h = temp;
+tmp = actual->next;
+free(actual);
+actual = tmp;
 i++;
-}
-else
+} else
 {
-free(*h);
+free(actual);
 *h = NULL;
 i++;
 break;
