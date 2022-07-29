@@ -1,10 +1,7 @@
-#include "hash_tables.h"
-
 /**
- * hash_djb2 - implementation of the djb2 algorithm
- * @str: string used to generate hash value
- *
- * Return: hash value
+ * hash_djb2 - Computes the hash of an array of bytes using the db2 algorithm.
+ * @str: The byte array.
+ * Return: A fixed size unsigned integer digest.
  */
 unsigned long int hash_djb2(const unsigned char *str)
 {
@@ -18,5 +15,3 @@ unsigned long int hash_djb2(const unsigned char *str)
 	}
 	return (hash);
 }
-Footer
-© 2022 GitH
